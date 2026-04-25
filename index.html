@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baltic Protein | Atnaujinimo darbai</title>
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=familjen-grotesk@400,700&f[]=geist@400,600,700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0866FF;
+            --font-heading: 'Familjen Grotesk', sans-serif;
+            --font-body: 'Geist', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 850px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo-box {
+            margin-bottom: 40px;
+        }
+
+        .logo-box img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .main-logo {
+            width: 100%;
+            max-width: 240px; /* Čia kontroliuoji dydį */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.02em; /* Šiuolaikiniams šriftams dažnai tinka mažesnis tarpas */
+            margin-bottom: 50px;
+            line-height: 1.1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .lang-col h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .lang-col p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
+        .socials {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .socials p {
+            font-family: var(--font-heading);
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .social-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 2px;
+        }
+
+        .social-link:hover {
+            opacity: 0.7;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+            h1 { font-size: 2.2rem; }
+            .social-links { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="logo-box">
+            <img src="logo.webp" alt="Baltic Protein Logo" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+            <div id="logo-text" style="display:none; font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700;">BALTIC PROTEIN</div>
+        </div>
+
+        <h1>Geresnė patirtis jau pakeliui!</h1>
+
+        <div class="grid">
+            <div class="lang-col">
+                <h2>Atnaujinimo darbai</h2>
+                <p>Šiuo metu „Baltic Protein“ kraustosi į naują platformą. Ruošiame greitesnę ir patogesnę sistemą, kad jūsų apsipirkimas būtų dar sklandesnis.</p>
+            </div>
+            <div class="lang-col">
+                <h2>Powering Up</h2>
+                <p>We are migrating to a new platform. Baltic Protein will be back online shortly with an improved experience and a brand new engine.</p>
+            </div>
+        </div>
+
+        <div class="socials">
+            <p>Sekite mūsų naujienas:</p>
+            <div class="social-links">
+                <a href="https://instagram.com/balticprotein" class="social-link" target="_blank">Instagram /balticprotein</a>
+                <a href="https://facebook.com/balticprotein" class="social-link" target="_blank">Facebook /balticprotein</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Pagalba: <a href="mailto:info@balticprotein.lt" style="color: #fff; text-decoration: none;">info@balticprotein.lt</a>
+        </div>
+    </div>
+
+</body>
+</html>
